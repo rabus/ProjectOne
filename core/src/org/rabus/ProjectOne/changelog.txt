@@ -1,0 +1,6 @@
+CHANGELOG:
+
+0.4.2:
+> Improved Monster implementation (added some movement ;p)
+0.4.1:
+> Created Block entity and changed render and creation method

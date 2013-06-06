@@ -1,0 +1,33 @@
+
+textures.png
+format: RGBA4444
+filter: Nearest,Nearest
+repeat: none
+tiles
+  rotate: false
+  xy: 0, 0
+  size: 160, 120
+  orig: 160, 120
+  offset: 0, 0
+  index: -1
+objects20x20
+  rotate: false
+  xy: 160, 0
+  size: 120, 120
+  orig: 120, 120
+  offset: 0, 0
+  index: -1
+fluids
+  rotate: false
+  xy: 280, 100
+  size: 160, 20
+  orig: 160, 20
+  offset: 0, 0
+  index: -1
+objects12x12
+  rotate: false
+  xy: 280, 88
+  size: 24, 12
+  orig: 24, 12
+  offset: 0, 0
+  index: -1

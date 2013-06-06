@@ -1,0 +1,40 @@
+TODO:
+
+### IMPORTANT ###
+> Create loading screen with assets loading for every separate level (and unload previous)
+> Possibly check collisions, then move (use grounded property) -> Below
+> Modify collision system to check collisions withour moving (to stabilise rendered movement, no shaking)
+> Map generation, define standard map format and dimensions, proper tiles placement based on bordering tiles
+> Create proper render method to BLOCKS and make it more flexible (to render only if player close by)
+> Implement proper RESIZE behaviour for viewport and camera
+> Implement RENDER method for every object and call it from MapRenderer (and render only if visible to player (memory usage!))
+> Load proper assets before every map (not all at once).
+> Optimize disposing for every object and entity, clean up memory (!!!)
+> Optimize larger object count (object updates heavily lowers fps) -> Maybe check collisions on player only and remove updates on non-critical static objects, like fluids and spikes (???)
+
+### IDEAS ###
+> Destructible blocks (maybe special block for that)
+
+### PENDING ###
+> Change score to crystals (also calculate total score besides crystals) -> EDIT: to diamonds
+> Create proper screen graphics (Loading, Intro, Menu, GameOver, GameWon)
+> Add Game Complete screen when all levels finished :)
+> Move animations to adequate objects.
+> Make game backward compatible down to GL 1.0.
+> Sounds for checkpoints, other items, weapons and monsters.
+> Implement Box2d physics engine.
+> Loading game state to checkpoint.
+> Player interactions - dig, shoot, attack, block + energy (magic?)
+> Sprites for checkpoints, ending flag, painkillers, enemies?
+> Monsters wandering, pathfinding, attacking player
+
+### PARTIAL ###
+> Implement ant calibrate proper controls for Android build. -> Still need some tweaking
+> Player animations - jump, dying -> PARTIAL, need some rework with death animations
+> Checkpoint animations (opening, closing on activation) -> still have to  implement proper behaviour (active, unactive checkpoints)
+
+### DONE ###
+> Camera settings and movement, adjust to world borders -> DONE // Created proper bounds checking
+> In GameScreen should change howManyLevels from static to dynamic checking (now set manually)! - > DONE // Now checks if next level is in AssetManager
+> Spikes rendering black background, probably something with SpriteCache -> DONE // Used SpriteCache to render backgrounds
+> Rewrite all resources to use AssetManager -> DONE

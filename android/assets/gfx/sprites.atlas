@@ -1,0 +1,96 @@
+
+sprites.png
+format: RGBA4444
+filter: Nearest,Nearest
+repeat: none
+clotharmor
+  rotate: false
+  xy: 0, 224
+  size: 160, 288
+  orig: 160, 288
+  offset: 0, 0
+  index: -1
+player
+  rotate: false
+  xy: 0, 144
+  size: 120, 80
+  orig: 120, 80
+  offset: 0, 0
+  index: -1
+armor_peasant
+  rotate: false
+  xy: 0, 72
+  size: 112, 72
+  orig: 112, 72
+  offset: 0, 0
+  index: -1
+armor_warrior
+  rotate: false
+  xy: 0, 0
+  size: 112, 72
+  orig: 112, 72
+  offset: 0, 0
+  index: -1
+human_magic
+  rotate: false
+  xy: 160, 440
+  size: 80, 72
+  orig: 80, 72
+  offset: 0, 0
+  index: -1
+orc_magic
+  rotate: false
+  xy: 160, 368
+  size: 80, 72
+  orig: 80, 72
+  offset: 0, 0
+  index: -1
+human_attack
+  rotate: false
+  xy: 160, 296
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+human_hair
+  rotate: false
+  xy: 160, 224
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+orc_attack
+  rotate: false
+  xy: 120, 152
+  size: 64, 72
+  orig: 64, 72
+  offset: 0, 0
+  index: -1
+human_base
+  rotate: false
+  xy: 184, 152
+  size: 48, 72
+  orig: 48, 72
+  offset: 0, 0
+  index: -1
+orc_base
+  rotate: false
+  xy: 112, 72
+  size: 48, 72
+  orig: 48, 72
+  offset: 0, 0
+  index: -1
+weapons
+  rotate: false
+  xy: 160, 116
+  size: 64, 36
+  orig: 64, 36
+  offset: 0, 0
+  index: -1
+empty
+  rotate: false
+  xy: 112, 52
+  size: 20, 20
+  orig: 20, 20
+  offset: 0, 0
+  index: -1
