@@ -1,17 +1,13 @@
 package org.rabus.ProjectOne.systems;
 
-import com.artemis.Aspect;
-import com.artemis.ComponentMapper;
-import com.artemis.Entity;
-import com.artemis.annotations.Mapper;
-import com.artemis.systems.EntityProcessingSystem;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.Input;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.Vector3;
+import org.rabus.ProjectOne.entities.Entity;
 
-public class PlayerInputSystem extends EntityProcessingSystem implements InputProcessor
+public class PlayerInputSystem implements InputProcessor
 {
     private static final float HorizontalThrusters = 300;
     private static final float HorizontalMaxSpeed = 300;
@@ -31,18 +27,16 @@ public class PlayerInputSystem extends EntityProcessingSystem implements InputPr
 
     public PlayerInputSystem(OrthographicCamera camera)
     {
-        super(null);
+        //super(null);
         this.camera = camera;
         this.mouseVector = new Vector3();
     }
 
-    @Override
     protected void initialize()
     {
         Gdx.input.setInputProcessor(this);
     }
 
-    @Override
     protected void process(Entity e)
     {
 
@@ -80,20 +74,20 @@ public class PlayerInputSystem extends EntityProcessingSystem implements InputPr
 
         if (up)
         {
-            position.y += 1.5 * world.getDelta();
+            //position.y += 1.5 * world.getDelta();
         }
         if (down)
         {
-            position.y -= 1.5 * world.getDelta();
+            //position.y -= 1.5 * world.getDelta();
         }
 
         if (left)
         {
-            position.x -= 1.5 * world.getDelta();
+            //position.x -= 1.5 * world.getDelta();
         }
         if (right)
         {
-            position.x += 1.5 * world.getDelta();
+            //position.x += 1.5 * world.getDelta();
         }
 
         if (shoot)
@@ -119,7 +113,7 @@ public class PlayerInputSystem extends EntityProcessingSystem implements InputPr
         }
         if (timeToFire > 0)
         {
-            timeToFire -= world.delta;
+            //timeToFire -= world.delta;
             if (timeToFire < 0)
             {
                 timeToFire = 0;
